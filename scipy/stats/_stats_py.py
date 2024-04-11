@@ -10491,7 +10491,7 @@ def wasserstein_distance(u_values, v_values, u_weights=None, v_weights=None):
 
     .. math::
 
-        l_1(u, v) = \int_{-\infty}^{+\infty} |U-V|
+        l_1(u, v) = \int_{0}^{1} |U^{-1}-V^{-1}|
 
     See [3]_ for a proof of the equivalence of both definitions.
 
